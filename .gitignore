@@ -26,3 +26,5 @@ freertos-port-lab/logs/
 # OS
 .DS_Store
 Thumbs.db
+
+docs
