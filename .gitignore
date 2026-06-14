@@ -14,7 +14,7 @@ logs/
 freertos-port-lab/logs/
 
 # Test projects
-idf_sanity/
+#idf_sanity/
 
 # Editor
 .vscode/
