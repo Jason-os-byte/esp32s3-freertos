@@ -1,0 +1,28 @@
+# Build
+freertos-port-lab/build/
+build/
+
+# ESP-IDF (external dependency)
+esp-idf/
+
+# Tools
+.espressif/
+.tool-versions
+
+# Logs
+logs/
+freertos-port-lab/logs/
+
+# Test projects
+idf_sanity/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
