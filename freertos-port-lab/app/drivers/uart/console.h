@@ -24,4 +24,8 @@ void console_puts(const char *s);
 void console_printf(const char *fmt, ...);
 void console_vprintf(const char *fmt, va_list ap);
 
+/* USB-Serial/JTAG 接收（Host → ESP32） */
+int  console_getc(void);
+int  console_rx_available(void);
+
 #endif /* CONSOLE_H */
