@@ -11,7 +11,7 @@ SIZE := $(CROSS)size
 FREERTOS_KERNEL := third_party/FreeRTOS-Kernel
 
 CFLAGS := -Os -mlongcalls -mtext-section-literals -mabi=call0 -fno-builtin -ffunction-sections -fdata-sections -g3
-CFLAGS += -Iapp -Iapp/common -Iapp/drivers/watchdog -Iapp/drivers/uart -Iapp/drivers/timer -Iapp/drivers/gpio -Iapp/drivers/pwm
+CFLAGS += -Iapp -Iapp/common -Iapp/drivers/watchdog -Iapp/drivers/uart -Iapp/drivers/timer -Iapp/drivers/gpio -Iapp/drivers/pwm -Iapp/drivers/adc
 CFLAGS += -Iapp/freertos_port/include
 CFLAGS += -I$(FREERTOS_KERNEL)/include
 LDFLAGS := -Tapp/linker/app.ld -nostdlib -Wl,-Map=$(BUILD_DIR)/$(TARGET).map -Wl,--entry=_start
@@ -30,6 +30,7 @@ SRCS := \
     app/drivers/uart/uart1.c \
     app/drivers/gpio/gpio.c \
     app/drivers/pwm/pwm.c \
+    app/drivers/adc/adc.c \
     app/drivers/timer/systimer.c \
     app/main/app_desc.c \
     app/main/main.c \
